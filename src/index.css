@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+    @apply bg-slate-800 h-screen text-slate-200
+}
+
+input[type="text"], select {
+    @apply flex grow min-w-0 p-1.5 bg-slate-700 rounded-lg text-gray-300 border border-slate-800
+}
+
+
+button[type="submit"] {
+    @apply p-1.5 bg-indigo-600 rounded-full font-medium text-gray-100
+}
+
+button[type="button"], button.tag_btn , button.delete_btn  {
+    @apply py-1 px-3 bg-gray-700 rounded-full text-gray-400
+}
+
+
+label.HTML, label.CSS, label.Javascript, label.Typescript {
+    @apply text-white/50 text-sm px-3 py-0.5 h-fit rounded-full w-fit
+}
+
+label.HTML { @apply bg-orange-950 }
+label.CSS { @apply bg-teal-950 }
+label.Javascript { @apply bg-yellow-950 }
+label.Typescript { @apply bg-cyan-950 }
+
